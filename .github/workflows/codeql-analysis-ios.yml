@@ -1,0 +1,11 @@
+name: Static Code Security Analysis (mobsf)
+
+on:
+  push:
+    branches: [ master, main ]
+  pull_request:
+    branches: [ master, main ]
+
+jobs:
+  analyze:
+    uses: lightspeed-security/code-scanning-workflows/.github/workflows/ios.yml@main
